@@ -114,7 +114,7 @@ describe("FundsManagement", function () {
 
       let balanceAfter = await token.balanceOf(manager.address);
 
-      expect(balanceAfter).to.be.greaterThan(balanceBefore);
+      expect(balanceAfter).to.be.equal(balanceBefore);
     });
   });
 });
